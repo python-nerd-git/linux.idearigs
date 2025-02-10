@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           port: 22
           script: |
-            cd /var/www/site2/public_html
+            cd /var/www/linux.idearigs/public_html
             git pull origin main
             systemctl restart apache2
 
